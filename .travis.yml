@@ -1,0 +1,11 @@
+language: c
+sudo: required
+
+before_install:
+  - sudo apt-get install gfortran
+
+install:
+  - make
+
+script:
+  - make test
